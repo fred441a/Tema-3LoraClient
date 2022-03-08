@@ -1,5 +1,5 @@
 import pandas as pd
-us_cities = pd.read_csv(r"C:\Users\hojbj\Desktop\mapdata.csv")
+us_cities = pd.read_csv(r"mapdata.csv")
 
 import plotly.express as px
 
