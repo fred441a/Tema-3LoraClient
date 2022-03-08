@@ -7,7 +7,7 @@ from datetime import datetime
 def openMap():
     us_cities = pd.read_csv(r"mapdata.csv")
     fig = px.scatter_mapbox(us_cities, lat="lat", lon="lon", hover_name="City", hover_data=["State", "Time"],
-                            color_discrete_sequence=["fuchsia"], zoom=22, height=800)
+                            color_discrete_sequence=["fuchsia"], zoom=15, height=800)
     fig.update_layout(mapbox_style="open-street-map")
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     fig.show()
